@@ -7,11 +7,11 @@ function display(){
 
   if (birthday === ""){
     alert("Empty Value, Choose a Valid Date");
-  // }else if(dt<=0 || dt>31){
-  //   alert("Invalid Date, Re-Enter Date again");
-  // }else if(mon<=0 || mon>12){
-  //   alert("Invalid Month Entry, Re-Enter Month again");
-  //   console.log()
+  }else if(dt<=0 || dt>31){
+    alert("Invalid Date, Re-Enter Date again");
+  }else if((mon+1)<=0 || (mon+1)>12){
+    console.log(mon)
+    alert("Invalid Month Entry, Re-Enter Month again");
   }else{
     document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
   }
@@ -42,22 +42,6 @@ function dayWeek(day, month, year){
     alert("Select a gender");
   }
 }
-
-
-// for radio
-// function checkgender(h){
-
-
-
-
-//   if (male.checked ===  true){
-//     return ghanaMale[h]
-//   }else if (female.checked === true){
-//     return ghanaFemale[h]
-//   }else{
-//     alert("Select a gender");
-//   }
-// };
 
 // reset function
 function reset() {
