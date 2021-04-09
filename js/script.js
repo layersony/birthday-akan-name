@@ -5,9 +5,12 @@ function display(){
   let mon = machDate.getMonth(); // month born diplayed in index form
   let yr = machDate.getFullYear(); // year born
 
-  document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
+  if (birthday === ""){
+    alert("Empty Value, Choose a Valid Date");
+  }else{
+    document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
+  }
 
-  console.log(dt + " " + mon + " " + yr);
 }
 
 // day of the Week
@@ -28,4 +31,20 @@ function dayWeek(day, month, year){
 
 function reset() {
   document.getElementById("birth-form").reset();
+};
+
+// for radio
+
+function checkgender(){
+  var male = document.getElementById("male");
+  // var female = document.getElementById("female");
+
+
+  if (male.checked ===  true){
+    alert("male checked");
+  }else if (female.checked === true){
+    alert("female checked");
+  }else{
+    alert("Select a gender");
+  }
 };
