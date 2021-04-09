@@ -16,12 +16,15 @@
   <!-- main section  -->
   <section id="main">
     <div class="jumbotron">
-      <input type="date" name="" id="birthday" placeholder="Date of birth eg (12)">
-      <p>Gender</p>
-      <input type="checkbox" name="" id="male">male
-      <input type="checkbox" name="" id="female">female
-      <p>Click to see you Akan Name</p>
-      <input type="button" value="Click" onclick="display();">
+      <form action="#" id="birth-form">
+        <input type="date" name="" id="birthday" placeholder="Date of birth eg (12)">
+        <p>Gender</p>
+        <input type="checkbox" name="" id="gender">male
+        <input type="checkbox" name="" id="gender">female
+        <p>Click to see you Akan Name</p>
+        <input type="button" value="Click" onclick="display();">
+        <input type="button" value="Reset" onclick="reset();">
+      </form>
     </div>
     <div>
       <p id="b-day"></p>

@@ -25,3 +25,7 @@ function dayWeek(day, month, year){
 
   return exactDay;
 }
+
+function reset() {
+  document.getElementById("birth-form").reset();
+};
