@@ -10,7 +10,6 @@ function display(){
   }else if(dt<=0 || dt>31){
     alert("Invalid Date, Re-Enter Date again");
   }else if((mon+1)<=0 || (mon+1)>12){
-    console.log(mon)
     alert("Invalid Month Entry, Re-Enter Month again");
   }else{
     document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
@@ -22,7 +21,6 @@ function dayWeek(day, month, year){
   let male = document.getElementById("male");
   let female = document.getElementById("female");
 
-  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday','Thursday', 'Friday', 'Saturday'];
   ghanaMale = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
   ghanaFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
   //jan and feb considered to be of the previous year

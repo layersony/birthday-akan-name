@@ -197,6 +197,9 @@ footer>.footer_info p{
     font-size: 45px;
     transition: ease-in 0.5s;
   }
+  .container-fluid{
+    margin-top: 10px;
+  }
   .left {
     width: 100%;
     min-height: 450px;
