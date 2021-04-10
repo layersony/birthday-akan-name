@@ -13,8 +13,8 @@ section{
   justify-content: center;
 }
 .container-fluid {
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1100px;
   margin: 50px auto;
   display: flex;
   align-items: center;
@@ -28,6 +28,8 @@ section{
 }
 .left>.jumbotron{
   background-color: chartreuse;
+  margin-right: 40px;
+  padding-left: 10px;
 }
 .right {
   width: 50%;
@@ -36,10 +38,11 @@ section{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 30px;
   border-radius: 8px;
   color: white;
-  margin-left: -20px;
+  margin-left: -70px;
 }
 .right>.jumbotron{
   background-color: transparent;
@@ -60,6 +63,9 @@ input[type=button]{
 }
 .fa:hover{
   font-size: 40px;
+}
+#akan>#b-day{
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -83,7 +89,9 @@ input[type=button]{
 
   .left>.jumbotron{
     padding: 5px;
-    text-align: left;
+    text-align: center;
+    margin-right: 0px;
+    padding-left: 0px;
   }
   #birth-form p{
     padding: 5px;
