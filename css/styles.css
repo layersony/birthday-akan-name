@@ -6,6 +6,9 @@
   box-sizing: border-box;
   /* color: black; */
 }
+header{
+  background-color: #000000;
+}
 section{
   background: beige;
   min-height: 100vh;
@@ -91,9 +94,12 @@ input[type=button]:hover{
 }
 .fa{
   font-size: 30px;
+  transition: ease-in-out 0.3s;
+
 }
 .fa:hover{
   font-size: 40px;
+  transition: step-start;
 }
 #akan>#b-day{
   font-size: 30px;
@@ -105,7 +111,9 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px
+  padding: 10px;
+  color: #a52a2a;
+  background-color: #000000;
 }
 footer>.social{
   background-color: transparent;
@@ -123,11 +131,11 @@ footer>.social ol li>.fa {
   padding: 5px;
   font-size: 25px;
   text-decoration: none;
-  color: #000000;
+  color: #a52a2a;
 }
 footer>.social ol li>.fa:hover{
   font-size: 35px;
-  color: #a52a2a;
+  color: #ffffff;
   transition: ease-in 0.5s;
 }
 
