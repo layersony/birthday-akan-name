@@ -81,13 +81,11 @@ input[type=button]{
   outline: none;
   border: none;
   border-radius: 5px;
-  transition: ease-in 0.2s;
 }
 input[type=button]:hover{
   background-color: #a52a2a;
   padding: 8px;
   width: 110px;
-  transition: ease-in 0.3s;
 }
 #birthday{
   padding: 20px;
