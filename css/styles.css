@@ -37,6 +37,8 @@ section{
   align-items: center;
   justify-content: center;
   /* background-color: aqua; */
+  position: relative;
+
 }
 .left {
   width: 50%;
@@ -44,8 +46,7 @@ section{
   background-color: #a52a2a;
   border-radius: 5px;
   padding-left: 10px;
-  color: white;
-  
+  color: white;  
 }
 .left>.jumbotron{
   background-color: transparent;
@@ -100,7 +101,15 @@ input[type=button]:hover{
   transition: step-start;
 }
 .akannames{
-  background-color: yellow;
+  background-color: #303137;
+  border-radius: 5px;
+  margin-top: -40px;
+  margin-right: 50px;
+  margin-left: -200px;
+  text-align: left;
+}
+.akannames>.jumbotron{
+  background-color: transparent;
 }
 
 #akan>#b-day{
@@ -144,6 +153,33 @@ footer>.footer_info p{
   font-size: 15px;
 }
 
+@media only screen and (max-width: 1280px) {
+  .akannames{
+    margin-top: -40px;
+    margin-right: 50px;
+    margin-left: -100px;
+    text-align: center;
+  }
+  .akannames>.row{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .akannames{
+    margin-top: -40px;
+    margin-right: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .akannames>.row{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .container-fluid {
@@ -177,6 +213,12 @@ footer>.footer_info p{
   #birth-form p{
     padding: 5px;
     font-size: 20px;
+  }
+  .akannames{
+    margin-top: -40px;
+    margin-right: 10px;
+    margin-left: 0;
+    text-align: center;
   }
   input[type=date]{
     padding: 10px;
