@@ -1,0 +1,60 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* color: black; */
+}
+section{
+  background: blue;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-fluid {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+}
+.left {
+  width: 50%;
+  min-height: 600px;
+  background-color: brown;
+}
+.content{
+  background-color: chartreuse;
+  padding: 20px;
+}
+.right {
+  width: 50%;
+  min-height: 400px;
+  background-color: #303137;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  margin-left: -20px;
+}
+.right>.jumbotron{
+  background-color: transparent;
+}
+#birth-form p{
+  padding: 10px;
+  font-size: 20px;
+}
+input[type=button]{
+  padding: 5px;
+  width: 100px;
+}
+#birthday{
+  padding: 20px;
+}
+
+
