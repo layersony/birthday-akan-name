@@ -58,3 +58,41 @@ input[type=button]{
 }
 
 
+@media only screen and (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+    width: 100%;
+    min-height: 450px;
+  }
+  .right {
+    width: 90%;
+    margin: 0;
+    margin-top: -50px;
+    text-align: center;
+    min-height: 300px;
+    margin-bottom: 50px;
+  }
+
+  .left>.jumbotron{
+    padding: 5px;
+    text-align: left;
+  }
+  #birth-form p{
+    padding: 5px;
+    font-size: 20px;
+  }
+  input[type=date]{
+    padding: 10px;
+  }
+  input[type=button]{
+    padding: 5px;
+    width: 80px;
+  }
+  #birthday{
+    padding: 5px;
+  }
+}
