@@ -99,10 +99,13 @@ input[type=button]:hover{
   font-size: 40px;
   transition: step-start;
 }
+.akannames{
+  background-color: yellow;
+}
+
 #akan>#b-day{
   font-size: 30px;
 }
-
 
 footer{
   display: flex;
