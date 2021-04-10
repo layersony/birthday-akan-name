@@ -51,7 +51,7 @@ sammaingi5@gmail.com
 
 @Maingi `Slack Moringa`
 
-Can View My Portfolio --> Click_ME(https://layersony.github.io/portfolio/)
+Can View My Portfolio --> [Click_ME](https://layersony.github.io/portfolio/)
 
 ---
 
