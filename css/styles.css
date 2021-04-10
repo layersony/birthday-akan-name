@@ -68,6 +68,8 @@ section{
   border-radius: 8px;
   color: white;
   margin-left: -70px;
+  transition: ease-in-out 0.5s;
+
 }
 .right>.jumbotron{
   background-color: transparent;
@@ -82,11 +84,14 @@ input[type=button]{
   outline: none;
   border: none;
   border-radius: 5px;
+  color: #ffffff;
+  background-color: #a52a2a;
 }
 input[type=button]:hover{
-  background-color: #a52a2a;
+  background-color: #ffffff;
   padding: 8px;
   width: 110px;
+  color: #a52a2a;
 }
 #birthday{
   padding: 20px;
@@ -107,6 +112,7 @@ input[type=button]:hover{
   margin-right: 50px;
   margin-left: -200px;
   text-align: left;
+  transition: ease-in 0.5s;
 }
 .akannames>.jumbotron{
   background-color: transparent;
@@ -196,9 +202,9 @@ footer>.footer_info p{
     min-height: 450px;
   }
   .right {
-    width: 90%;
+    width: 95%;
     margin: 0;
-    margin-top: -50px;
+    margin-top: 20px;
     text-align: center;
     min-height: 300px;
     margin-bottom: 50px;
@@ -229,7 +235,7 @@ footer>.footer_info p{
     outline: none;
     border: none;
     border-radius: 5px;
-    transition: none;
+    
   }
   
   #birthday{
