@@ -12,6 +12,10 @@ The Formula Used `(DD+(((MM+1)26)/10)+YY+(YY/4)+6*(YY/100)+(YY/400)-1)mod7;`
 
 `DD` - Day    `MM` - Month   `YY` - Year
 
+
+The Application
+![Preview](./images/akan-name.png)
+
 ---
 
 ## Access the website
