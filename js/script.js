@@ -39,7 +39,8 @@ function dayWeek(day, month, year){
   }else if (female.checked === true){
     return ghanaFemale[dOfWeek]
   }else{
-    alert("Select a gender");
+    alert("Try Again. Please Do Select a gender");
+    document.getElementById("birth-form").reset();
   }
 }
 
