@@ -40,19 +40,31 @@ To access this project on your local files, you can clone it using these steps
 ## Behaviour Driven Development
 
 1. Displays Form For Entering Date and Gender
-   - INPUT: User Enters Birth-Day via a Calander
+   - INPUT: User Enters Birth-Day via 3 inputs Day, Month, Year
    - INPUT: User chooses either Male or Female
-   - OUTPUT: Akan Name is Diplayed According What the User as Entered and Choose
+   - OUTPUT: Akan Name is Diplayed According What the User as Entered and Choosed
+
 2. Displays an Error Message if Date Input Left Blank
    - INPUT: ""
-   - OUTPUT: Empty Value, Choose a Valid Date
+   - OUTPUT: Invalid Day, Enter Between 1 and 31
+
 3. Displays an Error Message if Month Input is Left Blank
    - INPUT: ""
-   - OUTPUT: Invalid Month Entry, Re-Enter Month again"
-4. Displays an Error Message if Gender Not Chosen
+   - OUTPUT: Invalid Month, Enter Between 1 and 12
+
+4. Displays an Error Message if Year Input is Left Blank
+   - INPUT: ""
+   - OUTPUT: Invalid Year, Enter Between 1950 and 2030
+
+4. Displays an Error Message if One or All Inputs is Left Blank
+   - INPUT: ""
+   - OUTPUT: Empty Entry, Please Fill the Form
+
+5. Displays an Error Message if Gender Not Chosen
    - INPUT: "" 
-   - OUTPUT: Try Again. Please Do Select a gender 
-5. Clears Form and Reset the Message on Click
+   - OUTPUT: Try Again. Select a gender 
+
+6. Clears Form and Reset the Message on Click
    - INPUT: Click Reset Button
    - OUTPUT: Clears the Form Data
 
