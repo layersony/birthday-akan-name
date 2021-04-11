@@ -22,7 +22,8 @@ function display(){
     }else if(yr<=1950 || yr>2030){
       alert("Invalid Year Entry, Re-Enter Year again");
     }else{
-      document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
+      let fValue = dayWeek(dt, (mon + 1), yr)
+      document.getElementById('bash-day').innerHTML = "Awesome... You Were Born on " + fValue[1]+ " and Your Akan Name is <em>" + fValue[0]+ "</em>";
     }
   }
 }
@@ -32,7 +33,7 @@ function display(){
 function dayWeek(day, month, year){
   let male = document.getElementById("male");
   let female = document.getElementById("female");
-
+  let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   ghanaMale = ['Kwasi', 'Kwadwo', 'Kwabena', 'Kwaku', 'Yaw', 'Kofi', 'Kwame'];
   ghanaFemale = ['Akosua', 'Adwoa', 'Abenaa', 'Akua', 'Yaa', 'Afua', 'Ama'];
   //jan and feb considered to be of the previous year
@@ -45,9 +46,9 @@ function dayWeek(day, month, year){
   let dOfWeek = (day + parseInt(((month + 1) * 26) / 10) + year + parseInt(year / 4) + 6 * parseInt(year / 100) + parseInt(year / 400) - 1) % 7;
   
   if (male.checked ===  true){
-    return ghanaMale[dOfWeek]
+    return [ghanaMale[dOfWeek] , days[dOfWeek]]
   }else if (female.checked === true){
-    return ghanaFemale[dOfWeek]
+    return [ghanaFemale[dOfWeek] , days[dOfWeek]]
   }else{
     alert("Try Again. Please Do Select a gender");
     document.getElementById("birth-form").reset();

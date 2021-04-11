@@ -117,9 +117,12 @@ input[type=button]:hover{
 .akannames>.jumbotron{
   background-color: transparent;
 }
-
-#akan>#b-day{
+#akan{
+  text-align: center;
+}
+#akan span{
   font-size: 30px;
+  color: #a52a2a;
 }
 
 footer{
