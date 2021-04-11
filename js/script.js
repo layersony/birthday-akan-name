@@ -5,7 +5,7 @@ function display(){
   let birthday = month + "-" + day + "-" + year;
 
   if (year === ""){
-    alert("Invalid Year Entry, Try again");
+    alert("Empty Entry, Please Fill the Form");
     document.getElementById("birth-form").reset();    
   }else{
     let machDate = new Date(birthday);
@@ -14,16 +14,16 @@ function display(){
     let yr = machDate.getFullYear();
 
     if (isNaN(dt) == true && isNaN(mon) == true){
-      alert("Empty Value, Enter a Valid Date");
+      alert("Empty Date Slots, Enter Valid Date");
     }else if(parseInt(day)<=0 || parseInt(day)>31){
-      alert("Invalid Date Entry, Re-Enter again");
+      alert("Invalid Day, Enter Between 1 and 31");
     }else if((mon+1)<=0 || (mon+1)>12){
-      alert("Invalid Month Entry, Re-Enter again");
+      alert("Invalid Month, Enter Between 1 and 12");
     }else if(yr<=1950 || yr>2030){
-      alert("Invalid Year Entry, Re-Enter Year again");
+      alert("Invalid Year, Enter Between 1950 and 2030");
     }else{
-      let fValue = dayWeek(dt, (mon + 1), yr)
-      document.getElementById('bash-day').innerHTML = "Awesome... You Were Born on " + fValue[1]+ " and Your Akan Name is <em>" + fValue[0]+ "</em>";
+      let fValue = dayWeek(dt, (mon + 1), yr);
+      document.getElementById("b-day").innerHTML = "Awesome... You Were Born on <strong>" + fValue[1]+ "</strong> and Your Akan Name is <em>" + fValue[0]+ "</em>";
     }
   }
 }
@@ -50,7 +50,7 @@ function dayWeek(day, month, year){
   }else if (female.checked === true){
     return [ghanaFemale[dOfWeek] , days[dOfWeek]]
   }else{
-    alert("Try Again. Please Do Select a gender");
+    alert("Try Again. Select a gender");
     document.getElementById("birth-form").reset();
   }
 }

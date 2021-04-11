@@ -60,9 +60,12 @@
         <div class="jumbotron">
           <form action="#" id="birth-form">
             <div class="form-group">
+              <label>Day</label>
               <input type="number" class="form-control" min="1" max="31" name="day" id="day" placeholder="Day">
+              <label>Month</label>
               <input type="number" class="form-control" min="1" max="12" name="month" id="month" placeholder="Month eg (01 or 12)">
-              <input type="number" class="form-control" min="1960" max="2030" name="year" id="year" placeholder="Year eg (1997)">
+              <label>Year</label>
+              <input type="number" class="form-control" min="1950" max="2030" name="year" id="year" placeholder="Year eg (1997)">
               <p>Gender</p>
               <input type="radio" name="gender" id="male"> Male
               <input type="radio" name="gender" id="female"> Female
@@ -70,12 +73,10 @@
               <input type="button" value="Check" onclick="display();">
               <input type="button" value="Reset" onclick="reset();">
             </div>
+            <div id="akan">
+              <p id="b-day"></p>
+            </div>
           </form>
-        </div>
-
-        <div id="akan">
-          <p>Your Akan Name is:</p>
-          <p id="bash-day"></p>
         </div>
       </div>
     </div>
