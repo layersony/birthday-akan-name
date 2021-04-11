@@ -1,20 +1,32 @@
 function display(){
-  let birthday = document.getElementById("birthday").value;
-  let machDate = new Date(birthday);
-  let dt = machDate.getDate();
-  let mon = machDate.getMonth();
-  let yr = machDate.getFullYear();
+  let day = document.getElementById("day").value;
+  let month = document.getElementById("month").value;
+  let year = document.getElementById("year").value;
+  let birthday = month + "-" + day + "-" + year;
 
-  if (birthday === ""){
-    alert("Empty Value, Choose a Valid Date");
-  }else if(dt<=0 || dt>31){
-    alert("Invalid Date, Re-Enter Date again");
-  }else if((mon+1)<=0 || (mon+1)>12){
-    alert("Invalid Month Entry, Re-Enter Month again");
+  if (year === ""){
+    alert("Invalid Year Entry, Try again");
+    document.getElementById("birth-form").reset();    
   }else{
-    document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
+    let machDate = new Date(birthday);
+    let dt = machDate.getDate();
+    let mon = machDate.getMonth();
+    let yr = machDate.getFullYear();
+
+    if (isNaN(dt) == true && isNaN(mon) == true){
+      alert("Empty Value, Enter a Valid Date");
+    }else if(parseInt(day)<=0 || parseInt(day)>31){
+      alert("Invalid Date Entry, Re-Enter again");
+    }else if((mon+1)<=0 || (mon+1)>12){
+      alert("Invalid Month Entry, Re-Enter again");
+    }else if(yr<=1950 || yr>2030){
+      alert("Invalid Year Entry, Re-Enter Year again");
+    }else{
+      document.getElementById('b-day').innerHTML = dayWeek(dt, (mon + 1), yr);
+    }
   }
 }
+
 
 // day of the Week
 function dayWeek(day, month, year){
